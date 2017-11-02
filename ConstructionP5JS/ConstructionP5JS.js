@@ -30,10 +30,9 @@ var gunX = 800;
 var gunY = 200;
 var mX, mY;
 
-
-function setup(){
-  createCanvas (1074, 1069);
-  panorama = loadImage("data/carpanorama.jpg");
+function preload() {
+  
+   panorama = loadImage("data/carpanorama.jpg");
   minicooper = loadImage("data/minicooper.png");
   splat = loadImage("data/splat2.png");
   barrier = loadImage("data/barrier.png");
@@ -41,7 +40,13 @@ function setup(){
   busclone = loadImage("data/busclone.png");
   carcrash = loadImage("data/carcrash.png");
   spray = loadImage("data/constructionspraypaint.png");
-  gun = loadImage("data/gun.png");
+  gun = loadImage("data/gun.png"); 
+}
+
+
+function setup(){
+  createCanvas (1074, 1069);
+
   imageMode(CENTER);
   image (panorama, width/2, height/2, 1074, 1069); 
 }
